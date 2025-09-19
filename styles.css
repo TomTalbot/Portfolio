@@ -147,6 +147,7 @@ nav .right a span{
     margin: 10px;
     border: 1.5px solid #d3d3d3;
     border-radius: 5px;
+    transition: 0.2s;
 }
 
 .skills-section .cells .cell img {
@@ -160,6 +161,65 @@ nav .right a span{
     font-size: 18px;
 }
 
+.skills-section .cells .cell:hover{
+    border-color: aliceblue;
+    transform: scale(1.1);
+}
+
+
+/*project sections */
+.projects-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.projects-section h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+
+
+.projects-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects-section .cells .cell {
+    background-color:#c7c7c7  ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+
+    width: 750px;
+    padding: 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.projects-section .cells .cell span{
+
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+    
+}
+
+.projects-section .text {
+    text-align: center;
+}
+
+.projects-section .cells img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
 @media (max-width: 850px){
     /*hero*/
