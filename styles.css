@@ -29,8 +29,6 @@ a {
     text-decoration: none;
 }
 
-/* NAVBAR */
-
 nav{
     display: flex;
     justify-content: space-between;
@@ -66,9 +64,6 @@ nav .right a span{
     margin-left: 5px;
     
 }
-
-
-/*section 1 hero */
 
 .hero-section {
     display: flex;
@@ -107,7 +102,6 @@ nav .right a span{
     border: 2px solid var(--text-color);
 }
 
-
 .hero-section .github-stats {
     flex: 2;
     display: flex;
@@ -122,23 +116,46 @@ nav .right a span{
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-/*section 2 skills */
+.hero-section .hero-image {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    height: 340px;
+}
+
+.hero-section .hero-image .profile-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center 33%;
+    border-radius: 35%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 20px rgba(74, 118, 238, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #222;
+    margin-top: 20px;
+}
+
+.hero-section .hero-image .profile-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 25px rgba(74, 118, 238, 0.3);
+}
+
 .skills-section {
     padding: 0 50px;
     margin-bottom: 100px;
-
 }
 
 .skills-section h2{
     text-align: center;
     font-size: 35px;
-
 }
 
 .skills-section .text{
     text-align: center;
     margin-bottom: 20px;
-    
 }
 
 .skills-section .cells{
@@ -177,8 +194,6 @@ nav .right a span{
     transform: scale(1.1);
 }
 
-
-/*project sections */
 .projects-section{
     padding: 0 50px;
     margin-bottom: 100px;
@@ -189,8 +204,6 @@ nav .right a span{
     font-size: 35px;
 }
 
-
-
 .projects-section .cells {
     display: flex;
     justify-content: center;
@@ -198,7 +211,6 @@ nav .right a span{
 }
 
 .projects-section .cells .cell {
-    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -214,11 +226,9 @@ nav .right a span{
 }
 
 .projects-section .cells .cell span{
-
     font-size: 30px;
     font-weight: 600;
     text-decoration: underline;
-    
 }
 
 .projects-section .text {
@@ -243,7 +253,6 @@ nav .right a span{
     text-decoration: underline;
     text-align: center;
     margin-bottom: 20px;
-    
 }
 
 .about-me-section p{
@@ -251,7 +260,6 @@ nav .right a span{
 }
 
 @media (max-width: 850px){
-    /*hero*/
     .hero-section .text h2 {
         font-size: 35px;
     }
@@ -262,7 +270,6 @@ nav .right a span{
 }
 
 @media (max-width: 740px){
-    /*hero*/
     .hero-section{
         flex-direction: column-reverse;
     }
@@ -272,9 +279,6 @@ nav .right a span{
 }
 
 @media (max-width: 600px){
-    
-
-    /*nav */
     nav {
         padding: 0 20px
     }
@@ -289,23 +293,18 @@ nav .right a span{
         padding: 0;
     }
 
-
     nav .right a span{
         display: none;
     }
 
-    /*section 1 hero*/
-
     .hero-section {
         padding: 0 20px;
-
     }
 
     .hero-section .text h2{ 
         font-size: 30px;    
     }
 
-    /*section 2 skills */
     .skills-section{
         padding: 0 20px;
     }
@@ -313,6 +312,7 @@ nav .right a span{
     .skills-section .cells .cell span{
         font-size: 16px;
     }
+}
 
 @media print {
     body, html {
@@ -328,12 +328,8 @@ nav .right a span{
         page-break-inside: avoid; 
     }
     
-        
 @page {
     size: A4;         
     margin: 0;
     }
-    }
-    
-
 }
