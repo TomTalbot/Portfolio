@@ -228,6 +228,7 @@ nav .right a span{
     gap: 15px;
 
     width: 750px;
+    max-width: 100%;
     padding: 24px;
     margin: 10px;
     border: 1px solid #1c1c1c;
@@ -254,7 +255,9 @@ nav .right a span{
 
 .projects-section .cells img {
     width: 500px;
-    height: 500px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 12px;
     border: 1px solid #1c1c1c;
@@ -350,6 +353,18 @@ nav .right a span{
 
     .skills-section .cells .cell span{
         font-size: 16px;
+    }
+
+    .projects-section {
+        padding: 0 20px;
+    }
+
+    .projects-section .cells .cell {
+        padding: 16px;
+    }
+
+    .projects-section .cells .cell span {
+        font-size: 22px;
     }
 }
 
